@@ -6,7 +6,7 @@ const Navbar = () => {
       <Link href="/">
         <a>
           <img
-            src="/strapi.png"
+            src="/bite-me-gourmet-logo.png"
             alt="home"
             className="logo"
             height="150"
@@ -15,7 +15,7 @@ const Navbar = () => {
         </a>
       </Link>
       <button className="snipcart-checkout flex items-center">
-        <img src="/cart.svg" alt="Cart" />
+        <img src="/basket3.svg" alt="Cart" height="20" width="20" />
         <span className="snipcart-total-price ml-3 font-semibold text-sm text-indigo-500"></span>
       </button>
     </div>
