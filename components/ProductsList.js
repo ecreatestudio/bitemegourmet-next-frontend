@@ -11,7 +11,7 @@ const ProductsList = ({ products }) => {
         >
           <Link href={`/products/${_product.slug}`}>
             <a>
-              <div className="rounded-t-lg bg-white pt-2 pb-2">
+              <div className="rounded-t-lg bg-white">
                 <img
                   className="crop mx-auto"
                   src={getStrapiMedia(_product.image.formats.thumbnail.url)}
