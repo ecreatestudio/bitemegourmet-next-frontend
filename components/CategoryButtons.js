@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const CategoryButtons = ({ categories = [] }) => {
+  // Sort categories by id, then return category buttons
+  categories.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0));
   return (
     <div className="container flex flex-wrap mx-auto gap-2 mt-8">
       {categories.map((_category) => (
