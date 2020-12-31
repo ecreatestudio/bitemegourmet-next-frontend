@@ -12,12 +12,6 @@ const Footer = () => {
         <a href="https://facebook.com/strapijs" className="ml-3">
           <img src="/facebook.svg" alt="Facebook" />
         </a>
-        <a
-          href="https://github.com/strapi/strapi-starter-next-e-commerce"
-          className="ml-3"
-        >
-          <img src="/github.svg" alt="GitHub" />
-        </a>
       </div>
     </div>
   );
