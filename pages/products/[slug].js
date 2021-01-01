@@ -26,7 +26,7 @@ const ProductPage = ({ product }) => {
           <h4 className="mt-1 font-semibold text-lg leading-tight truncate text-gray-700">
             {product.title}
           </h4>
-          <div className="mt-1 font-semibold text-lg">${product.price}</div>
+          <div className="mt-1 font-semibold text-lg">${product.price} <span className="font-light">{product.serving}</span></div>
             {product.status === "published" ? (
                 <button
                   className="snipcart-add-item w-full mt-4 bg-white border border-gray-200 d hover:shadow-lg text-gray-700 font-semibold py-2 px-4 rounded shadow"
