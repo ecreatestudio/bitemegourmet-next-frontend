@@ -12,7 +12,7 @@ const ProductPage = ({ product }) => {
   return (
     <div className="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8">
       <Head>
-        <title>{product.title} product</title>
+        <title>{product.title} gourmet food</title>
       </Head>
       <div className="rounded-t-lg pt-2 pb-2">
         <img
