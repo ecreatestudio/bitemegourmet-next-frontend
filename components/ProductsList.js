@@ -14,7 +14,7 @@ const ProductsList = ({ products }) => {
               <div className="rounded-t-lg bg-white">
                 <img
                   className="crop mx-auto"
-                  src={getStrapiMedia(_product.image.formats.thumbnail.url)}
+                  src={getStrapiMedia(_product.image.formats.small.url)}
                   alt={_product.title}
                   width="325px"
                 />
