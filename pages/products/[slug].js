@@ -16,7 +16,7 @@ const ProductPage = ({ product }) => {
       </Head>
       <div className="rounded-t-lg pt-2 pb-2">
         <img
-          src={getStrapiMedia(product.image.url)}
+          src={getStrapiMedia(product.image.formats.small.url)}
           className="m-auto"
           alt={product.title}
         />
