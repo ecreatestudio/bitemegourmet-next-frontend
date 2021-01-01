@@ -6,7 +6,7 @@ const HomePage = ({ products }) => {
   return (
     <div>
       <Head>
-        <title>Strapi Next.js E-commerce</title>
+        <title>Bite Me Gourmet Online Ordering</title>
       </Head>
       <ProductsList products={products} />
     </div>
