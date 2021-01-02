@@ -49,10 +49,10 @@ const ProductPage = ({ product }) => {
                 role="alert"
               >
                 <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">
-                  Coming soon...
+                  Off the menu...
                 </span>
                 <span className="font-semibold mr-2 text-left flex-auto">
-                  This article is not available yet.
+                  This item is not currently available.
                 </span>
               </div>
             </div>
