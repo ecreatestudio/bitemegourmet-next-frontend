@@ -11,7 +11,11 @@ const ProductPage = ({ product }) => {
   }
   const [qtyValue, setQtyValue] = useState(1);
   const onQtyChange = (event) => {
-    setQtyValue(event.target.value);
+    if (parseInt(event.target.value) > 1) {
+      setQtyValue(event.target.value)
+    } else {
+      setQtyValue(1)
+    }
   };
 
   return (
