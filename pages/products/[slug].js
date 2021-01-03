@@ -42,7 +42,7 @@ const ProductPage = ({ product }) => {
                 <div className="flex-initial">
                   <div className="mt-4 text-gray-700 font-semibold pr-4">
                     <label>Qty:</label> <input value={qtyValue} onChange={onQtyChange} id="quantity" type="number" 
-                      inputmode="decimal" className="text-center py-2" style={{maxWidth: 5 + 'em'}}></input>
+                      inputMode="numeric" className="text-center py-2" style={{maxWidth: 5 + 'em'}}></input>
                   </div>
                 </div>
                 <div className="flex-auto">
