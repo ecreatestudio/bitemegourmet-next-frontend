@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { getProducts, getProduct } from "../../utils/api";
 import { getStrapiMedia } from "../../utils/medias";
 import { useState } from 'react';
+import ReactMarkdown from 'react-markdown'
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
@@ -79,6 +80,12 @@ const ProductPage = ({ product }) => {
             </div>
           )}
           <div className="mt-4 text-gray-600">{product.description}</div>
+          {product.ingredients !== null ? (
+              <div className="mt-4 text-gray-600"><ReactMarkdown>{product.ingredients}</ReactMarkdown></div>
+            ) : (
+              null
+            )
+          }
         </div>
       </div>
     </div>
