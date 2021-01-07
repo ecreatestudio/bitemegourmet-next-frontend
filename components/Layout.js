@@ -1,6 +1,7 @@
 import CategoryButtons from "./CategoryButtons";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Snipcart from "./Snipcart";
 
 const Layout = ({ children, categories }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children, categories }) => {
         <CategoryButtons categories={categories} />
         <div className="flex-grow">{children}</div>
         <Footer />
+        <Snipcart />
       </div>
       <div
         hidden
