@@ -13,6 +13,7 @@ const Footer = () => {
           <img src="/facebook.svg" alt="Facebook" />
         </a>
       </div>
+      <script src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js" />
     </div>
   );
 };
