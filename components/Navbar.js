@@ -8,9 +8,7 @@ const Navbar = () => {
           <img
             src="/bite-me-gourmet-logo.png"
             alt="home"
-            className="logo"
-            height="150"
-            width="150"
+            className="logo w-24 sm:w-40"
           />
         </a>
       </Link>
