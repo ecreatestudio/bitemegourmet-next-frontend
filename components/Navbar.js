@@ -12,9 +12,9 @@ const Navbar = () => {
           />
         </a>
       </Link>
-      <button className="snipcart-checkout flex items-center">
+      <button className="snipcart-checkout flex flex-col items-center">
         <img src="/basket3.svg" alt="Cart" height="20" width="20" />
-        <span className="snipcart-total-price ml-3 font-semibold text-sm text-indigo-500"></span>
+        <span className="snipcart-total-price font-semibold text-sm text-indigo-500"></span>
       </button>
     </div>
   );
