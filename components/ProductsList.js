@@ -11,12 +11,12 @@ const ProductsList = ({ products }) => {
         >
           <Link href={`/products/${_product.slug}`}>
             <a>
-              <div className="rounded-t-lg bg-white">
+              <div className="rounded-t-lg bg-white px-2">
                 <img
                   className="crop mx-auto mt-2"
                   src={getStrapiMedia(_product.image.formats.small.url)}
                   alt={_product.title}
-                  width="311px"
+                  width="325px"
                 />
               </div>
               <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
