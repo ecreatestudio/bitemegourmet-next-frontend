@@ -13,10 +13,10 @@ const ProductsList = ({ products }) => {
             <a>
               <div className="rounded-t-lg bg-white">
                 <img
-                  className="crop mx-auto"
+                  className="crop mx-auto mt-2"
                   src={getStrapiMedia(_product.image.formats.small.url)}
                   alt={_product.title}
-                  width="325px"
+                  width="311px"
                 />
               </div>
               <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
