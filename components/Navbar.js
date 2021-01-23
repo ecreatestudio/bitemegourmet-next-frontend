@@ -39,10 +39,10 @@ const Navbar = ({ categories = [] }) => {
         </button>
       </div>
       {menuOpen && 
-        <div className="flex mx-auto mt-5">
+        <div className="flex flex-col justify-center md:flex-row mt-5">
           {categories.map((_category) => (
             <Link href={`/categories/${_category.slug}`} key={_category.id}>
-              <a className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 mx-1 border border-gray-400 rounded shadow">
+              <a className="hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 mx-1">
                 {_category.name}
               </a>
             </Link>
