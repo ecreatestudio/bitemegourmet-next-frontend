@@ -42,7 +42,7 @@ const Navbar = ({ categories = [] }) => {
         <div className="flex flex-col justify-center md:flex-row mt-5">
           {categories.map((_category) => (
             <Link href={`/categories/${_category.slug}`} key={_category.id}>
-              <a className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1">
+              <a className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1" onClick={toggleMenu}>
                 {_category.name}
               </a>
             </Link>
