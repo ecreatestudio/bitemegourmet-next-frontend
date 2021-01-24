@@ -27,7 +27,7 @@ const Navbar = ({ categories = [] }) => {
         <Link href="/">
           <a>
             <img
-              src="/bite-me-gourmet-logo-light.png"
+              src="/bite-me-gourmet-logo-bright.png"
               alt="home"
               className="logo w-24 sm:w-32"
             />
