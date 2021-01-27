@@ -12,7 +12,7 @@ const Navbar = ({ categories = [] }) => {
   useEffect(() => {setMenuVisible(menuOpen ? 'block': 'hidden')},[menuOpen]);
 
   return (
-    <div className="flex flex-col bg-gray-800 text-gray-300">
+    <div className="flex flex-col bg-gray-800 text-gray-300 min-w-1/4 rounded-lg lg:my-6">
       <div className="flex justify-between ml-6 mr-6 my-3">
         {menuOpen ? 
           <button className="text-gray-400 hover:text-white focus:outline-none focus:text-white" onClick={toggleMenu}>

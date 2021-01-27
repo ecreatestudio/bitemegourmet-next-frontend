@@ -6,9 +6,11 @@ import Snipcart from "./Snipcart";
 const Layout = ({ children, categories }) => {
   return (
     <div className="flex justify-center bg-gray-200">
-      <div className="max-w-screen-lg flex flex-col min-h-screen w-full">
-        <Navbar categories={categories} />
-        <div className="flex-grow">{children}</div>
+      <div className="max-w-screen-xl flex flex-col min-h-screen w-full">
+        <div className="flex flex-col lg:flex-row">
+          <Navbar categories={categories} />
+          <div className="lg:max-w-3/4 flex-grow">{children}</div>
+        </div>
         <Footer />
         <Snipcart />
       </div>
