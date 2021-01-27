@@ -1,13 +1,15 @@
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Navbar = ({ categories = [] }) => {
 
   // Sort categories by id, then return category buttons
   categories.sort((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0));
 
+  const [menuVisible, setMenuVisible] = useState('hidden');
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {setMenuOpen(!menuOpen)};
+  useEffect(() => {setMenuVisible(menuOpen ? 'block': 'hidden')},[menuOpen]);
 
   return (
     <div className="flex flex-col bg-gray-800 text-gray-300">
@@ -38,17 +40,15 @@ const Navbar = ({ categories = [] }) => {
           <span className="snipcart-total-price font-semibold text-sm text-indigo-200"></span>
         </button>
       </div>
-      {menuOpen && 
-        <div className="flex flex-col justify-center md:flex-row mt-5">
-          {categories.map((_category) => (
-            <Link href={`/categories/${_category.slug}`} key={_category.id}>
-              <a className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1" onClick={toggleMenu}>
-                {_category.name}
-              </a>
-            </Link>
-          ))}
-        </div>
-      }
+      <div className={"flex flex-col justify-center md:flex-row mt-5 " + menuVisible}>
+        {categories.map((_category) => (
+          <Link href={`/categories/${_category.slug}`} key={_category.id}>
+            <a className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1" onClick={toggleMenu}>
+              {_category.name}
+            </a>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
