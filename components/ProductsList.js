@@ -3,7 +3,7 @@ import { getStrapiMedia } from "../utils/medias";
 
 const ProductsList = ({ products }) => {
   return (
-    <div className="m-3 lg:m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-4 lg:mt-2">
+    <div className="m-3 lg:my-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
       {products.map((_product) => (
         <div
           key={_product.id}
