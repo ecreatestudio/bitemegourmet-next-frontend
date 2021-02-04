@@ -20,21 +20,22 @@ const ProductPage = ({ product }) => {
   };
 
   return (
-    <div className="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8">
+    <div className="mt-3 mx-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4">
       <Head>
         <title>{product.title} gourmet food</title>
       </Head>
-      <div className="rounded-t-lg pt-2 pb-2">
+      <div className="grid grid-cols-1 rounded-t-lg pb-2">
+        <h1 className="text-center md:text-left md:ml-1 text-2xl font-sans font-semibold block text-gray-800">{product.title}</h1>
         <img
           src={getStrapiMedia(product.image.formats.small.url)}
-          className="m-auto"
+          className="m-auto mt-2"
           alt={product.title}
         />
       </div>
-      <div className="w-full p-5 flex flex-col justify-between">
+      <div className="w-full md:mt-12 flex flex-col justify-between">
         <div>
           <h4 className="mt-1 font-semibold text-lg leading-tight truncate text-gray-700">
-            {product.title}
+            Bite Me {product.title}
           </h4>
           <div className="mt-1 font-semibold text-lg">${product.price} <span className="font-light">{product.serving}</span></div>
           
