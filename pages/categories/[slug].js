@@ -14,6 +14,7 @@ const CategoryPage = ({ category }) => {
       <Head>
         <title>{category.name} gourmet food</title>
       </Head>
+      <h1 className="ml-5 mt-3 text-2xl font-sans font-semibold">{category.name}</h1>
       <ProductsList products={category.products} />
     </div>
   );
