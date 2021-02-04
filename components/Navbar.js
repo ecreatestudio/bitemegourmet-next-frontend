@@ -12,7 +12,7 @@ const Navbar = ({ categories = [] }) => {
   useEffect(() => {setMenuVisible(menuOpen ? 'block': 'hidden lg:block')},[menuOpen]);
 
   return (
-    <div className="flex flex-col bg-gray-800 text-gray-300 min-w-1/4 rounded-lg lg:my-2">
+    <div className="flex flex-col bg-gray-900 text-gray-300 min-w-1/4 lg:rounded-lg lg:my-2">
       <div className="flex justify-between ml-6 mr-6 my-3">
         {menuOpen ? 
           <button className="text-gray-400 hover:text-white focus:outline-none focus:text-white xl:hidden" onClick={toggleMenu}>
@@ -41,7 +41,7 @@ const Navbar = ({ categories = [] }) => {
         </button>
       </div>
       <div className={menuVisible}>
-        <div className={"flex flex-col md:flex-row lg:flex-col justify-center mt-5"}>
+        <div className={"flex flex-col md:flex-row lg:flex-col justify-center bg-gray-800 py-2"}>
           {categories.map((_category) => (
             <Link href={`/categories/${_category.slug}`} key={_category.id}>
               <a className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1" onClick={toggleMenu}>
