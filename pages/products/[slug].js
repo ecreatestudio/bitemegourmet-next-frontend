@@ -2,8 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { getProducts, getProduct } from "../../utils/api";
 import { getStrapiMedia } from "../../utils/medias";
-import { useState } from 'react';
-import ReactMarkdown from 'react-markdown'
+import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
@@ -13,9 +13,9 @@ const ProductPage = ({ product }) => {
   }
   const onQtyChange = (event) => {
     if (parseInt(event.target.value) < 1) {
-      setQtyValue(1)
+      setQtyValue(1);
     } else {
-      setQtyValue(event.target.value)
+      setQtyValue(event.target.value);
     }
   };
 
@@ -25,7 +25,9 @@ const ProductPage = ({ product }) => {
         <title>{product.title} gourmet food</title>
       </Head>
       <div className="grid grid-cols-1 rounded-t-lg pb-2">
-        <h1 className="text-center md:text-left md:ml-1 text-2xl font-sans font-semibold block text-gray-800">{product.title}</h1>
+        <h1 className="text-center md:text-left md:ml-1 text-2xl font-sans font-semibold block text-gray-800">
+          {product.title}
+        </h1>
         <img
           src={getStrapiMedia(product.image.formats.small.url)}
           className="m-auto mt-2"
@@ -37,34 +39,45 @@ const ProductPage = ({ product }) => {
           <h4 className="mt-1 font-semibold text-lg leading-tight truncate text-gray-700">
             Bite Me {product.title}
           </h4>
-          <div className="mt-1 font-semibold text-lg">${product.price} <span className="font-light">{product.serving}</span></div>
-          
-            {product.status === "published" ? (
-              <div className="flex flex-wrap">
-                <div className="flex-initial">
-                  <div className="mt-4 text-gray-700 font-semibold pr-4">
-                    <label>Qty:</label> <input value={qtyValue} onChange={onQtyChange} id="quantity" type="number" 
-                      inputMode="numeric" className="text-center py-2" style={{maxWidth: 5 + 'em'}}></input>
-                  </div>
-                </div>
-                <div className="flex-auto">
-                  <button
-                    className="snipcart-add-item w-full mt-4 bg-white border border-gray-200 d hover:shadow-lg text-gray-700 font-semibold py-2 px-6 rounded shadow"
-                    data-item-id={product.id}
-                    data-item-price={product.price}
-                    data-item-url={router.asPath}
-                    data-item-description={product.description}
-                    data-item-image={getStrapiMedia(
-                      product.image.formats.thumbnail.url
-                    )}
-                    data-item-name={product.title}
-                    data-item-quantity={qtyValue}
-                    v-bind="customFields"
-                  >
-                    Add to cart
-                  </button>
+          <div className="mt-1 font-semibold text-lg">
+            ${product.price}{" "}
+            <span className="font-light">{product.serving}</span>
+          </div>
+
+          {product.status === "published" ? (
+            <div className="flex flex-wrap">
+              <div className="flex-initial">
+                <div className="mt-4 text-gray-700 font-semibold pr-4">
+                  <label>Qty:</label>{" "}
+                  <input
+                    value={qtyValue}
+                    onChange={onQtyChange}
+                    id="quantity"
+                    type="number"
+                    inputMode="numeric"
+                    className="text-center py-2"
+                    style={{ maxWidth: 5 + "em" }}
+                  ></input>
                 </div>
               </div>
+              <div className="flex-auto">
+                <button
+                  className="snipcart-add-item w-full mt-4 bg-white border border-gray-200 d hover:shadow-lg text-gray-700 font-semibold py-2 px-6 rounded shadow"
+                  data-item-id={product.id}
+                  data-item-price={product.price}
+                  data-item-url={router.asPath}
+                  data-item-description={product.description}
+                  data-item-image={getStrapiMedia(
+                    product.image.formats.thumbnail.url
+                  )}
+                  data-item-name={product.title}
+                  data-item-quantity={qtyValue}
+                  v-bind="customFields"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
           ) : (
             <div className="text-center mr-10 mb-1" v-else>
               <div
@@ -82,11 +95,10 @@ const ProductPage = ({ product }) => {
           )}
           <div className="mt-4 text-gray-600">{product.description}</div>
           {product.ingredients !== null ? (
-              <div className="mt-4 text-gray-600"><ReactMarkdown>{product.ingredients}</ReactMarkdown></div>
-            ) : (
-              null
-            )
-          }
+            <div className="mt-4 text-gray-600">
+              <ReactMarkdown>{product.ingredients}</ReactMarkdown>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

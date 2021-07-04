@@ -8,7 +8,9 @@ const HomePage = ({ products }) => {
       <Head>
         <title>Bite Me Gourmet Online Ordering</title>
       </Head>
-      <h1 className="text-center md:text-left md:ml-5 mt-3 text-2xl font-sans font-semibold text-gray-800">Bite Size Delights</h1>
+      <h1 className="text-center md:text-left md:ml-5 mt-3 text-2xl font-sans font-semibold text-gray-800">
+        Bite Size Delights
+      </h1>
       <ProductsList products={products} />
     </div>
   );
