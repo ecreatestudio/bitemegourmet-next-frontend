@@ -7,10 +7,10 @@ import ReactMarkdown from 'react-markdown'
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
+  const [qtyValue, setQtyValue] = useState(1);
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
-  const [qtyValue, setQtyValue] = useState(1);
   const onQtyChange = (event) => {
     if (parseInt(event.target.value) < 1) {
       setQtyValue(1)
