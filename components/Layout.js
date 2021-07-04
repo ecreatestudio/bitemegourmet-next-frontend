@@ -1,4 +1,3 @@
-import CategoryButtons from "./CategoryButtons";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Snipcart from "./Snipcart";
