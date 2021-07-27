@@ -9,26 +9,32 @@ const ProductsList = ({ products }) => {
           key={_product.id}
           className="border rounded-lg bg-gray-100 hover:shadow-lg shadow-md bg-gray-800"
         >
-          <Link href={`/products/${_product.slug}`}>
-            <a>
-              <div className="rounded-t-lg px-2">
-                <img
-                  className="crop mx-auto mt-2"
-                  src={getStrapiMedia(_product.image.formats.small.url)}
-                  alt={_product.title}
-                  min-width="325px"
-                />
-              </div>
-              <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
-                <h4 className="mt-1 font-semibold text-base leading-tight truncate text-white">
-                  {_product.title}
-                </h4>
-                <div className="mt-1 text-sm text-gray-200">
-                  {_product.description}
-                </div>
-              </div>
-            </a>
-          </Link>
+          <div className="rounded-t-lg px-2">
+            <img
+              className="crop mx-auto mt-2"
+              src={getStrapiMedia(_product.image.formats.small.url)}
+              alt={_product.title}
+              min-width="325px"
+            />
+          </div>
+          <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
+            <h4 className="mt-1 font-semibold text-base leading-tight truncate text-white">
+              {_product.title}
+            </h4>
+            <div className="mt-1 text-sm text-gray-200 truncate">
+              {_product.description}
+            </div>
+            <Link href={`/products/${_product.slug}`}>
+              <a>
+                <button
+                  class="bg-blue-500 text-white font-bold mt-3 py-2 px-6 rounded"
+                  type="button"
+                >
+                  More info
+                </button>
+              </a>
+            </Link>
+          </div>
         </div>
       ))}
     </div>
