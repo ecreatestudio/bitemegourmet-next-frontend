@@ -27,10 +27,10 @@ const ProductsList = ({ products }) => {
             <Link href={`/products/${_product.slug}`}>
               <a>
                 <button
-                  class="bg-blue-500 text-white font-bold mt-3 py-2 px-6 rounded"
+                  class="bg-white border border-gray-800 hover:border-transparent text-gray-800 font-bold mt-3 py-2 px-4 rounded-md"
                   type="button"
                 >
-                  More info
+                  View details
                 </button>
               </a>
             </Link>
