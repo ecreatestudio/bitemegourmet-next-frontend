@@ -71,19 +71,19 @@ const Navbar = ({ categories = [] }) => {
         </Link>
         <button className="snipcart-checkout flex flex-col items-center focus:outline-none focus:bg-gray-700">
           <img src="/basket3.svg" alt="Cart" height="20" width="20" />
-          <span className="snipcart-total-price font-semibold text-sm text-indigo-200"></span>
+          <span className="snipcart-total-price font-semibold text-sm text-blue-400 hover:underline"></span>
         </button>
       </div>
       <div className={menuVisible}>
         <div
           className={
-            "flex flex-col md:flex-row lg:flex-col justify-center bg-gray-800 py-2"
+            "flex flex-col md:flex-row lg:flex-col justify-center text-white bg-gray-800 py-2"
           }
         >
           {categories.map((_category) => (
             <Link href={`/categories/${_category.slug}`} key={_category.id}>
               <a
-                className="hover:text-white focus:bg-gray-900 focus:text-white text-gray-400 font-semibold py-2 px-4 mx-1"
+                className="border-b border-t border-transparent hover:bg-gray-900 focus:border-gray-500 font-semibold py-2 px-4 mx-1"
                 onClick={toggleMenu}
               >
                 {_category.name}
