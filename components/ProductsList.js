@@ -27,7 +27,7 @@ const ProductsList = ({ products }) => {
             <Link href={`/products/${_product.slug}`}>
               <a>
                 <button
-                  className="bg-white border-4 border-white hover:border-green-400 focus:border-green-400 
+                  className="bg-white border-2 border-white hover:bg-gray-800 focus:bg-gray-800 hover:text-white focus:text-white
                     text-gray-800 font-bold mt-3 px-4 py-1 rounded-md"
                   type="button"
                 >
