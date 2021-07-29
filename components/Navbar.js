@@ -77,13 +77,13 @@ const Navbar = ({ categories = [] }) => {
       <div className={menuVisible}>
         <div
           className={
-            "flex flex-col md:flex-row lg:flex-col justify-center text-white bg-gray-800 py-2"
+            "flex flex-col md:flex-row lg:flex-col justify-center text-white bg-gray-900 py-2"
           }
         >
           {categories.map((_category) => (
             <Link href={`/categories/${_category.slug}`} key={_category.id}>
               <a
-                className="border-b border-t border-transparent hover:bg-gray-900 focus:border-gray-500 font-semibold py-2 px-4 mx-1"
+                className="border-b border-t border-transparent hover:bg-gray-800 focus:border-gray-500 font-semibold py-2 px-4 mx-1"
                 onClick={toggleMenu}
               >
                 {_category.name}
