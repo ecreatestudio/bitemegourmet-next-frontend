@@ -20,7 +20,7 @@ const ProductPage = ({ product }) => {
   };
 
   return (
-    <div className="lg:h-full bg-gray-900 p-3 lg:rounded-lg my-2">
+    <div className="lg:h-full bg-gray-800 p-3 lg:rounded-lg my-2">
       <Head>
         <title>{product.title} gourmet food</title>
       </Head>
@@ -33,7 +33,7 @@ const ProductPage = ({ product }) => {
         <div>
           <img
             src={getStrapiMedia(product.image.formats.small.url)}
-            className="m-auto mt-2"
+            className="m-auto mt-2 rounded-md"
             alt={product.title}
           />
         </div>
@@ -58,15 +58,15 @@ const ProductPage = ({ product }) => {
                       id="quantity"
                       type="number"
                       inputMode="numeric"
-                      className="text-gray-800 text-center py-2"
+                      className="text-gray-800 text-center pt-3 pb-2 rounded-sm"
                       style={{ maxWidth: 5 + "em" }}
                     ></input>
                   </div>
                 </div>
                 <div className="flex-auto">
                   <button
-                    className="snipcart-add-item w-full mt-4 bg-green-300 border-2 d hover:shadow-lg text-white font-semibold 
-                  py-2 px-6 rounded shadow"
+                    className="snipcart-add-item w-full mt-4 bg-white border-2 hover:bg-gray-800 focus:bg-gray-800 text-gray-800 
+                    hover:text-white focus:text-white font-semibold py-2 px-6 rounded shadow"
                     data-item-id={product.id}
                     data-item-price={product.price}
                     data-item-url={router.asPath}
