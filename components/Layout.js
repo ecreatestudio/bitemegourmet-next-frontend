@@ -13,7 +13,9 @@ const Layout = ({ children, categories }) => {
         </div>
         <div className="flex flex-col lg:flex-row lg:h-full">
           <Navbar categories={categories} />
-          <div className="flex flex-col lg:max-w-3/4 lg:ml-2">{children}</div>
+          <div className="flex flex-col lg:max-w-3/4 lg:ml-2 lg:mt-2">
+            {children}
+          </div>
         </div>
         <Footer />
         <Snipcart />

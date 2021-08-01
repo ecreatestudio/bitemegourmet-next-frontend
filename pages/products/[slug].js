@@ -20,7 +20,7 @@ const ProductPage = ({ product }) => {
   };
 
   return (
-    <div className="lg:h-full bg-gray-800 p-3 lg:rounded-lg my-2">
+    <div className="lg:h-full bg-gray-800 p-3 lg:rounded-lg lg:mb-2">
       <Head>
         <title>{product.title} gourmet food</title>
       </Head>

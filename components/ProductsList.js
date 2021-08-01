@@ -3,7 +3,7 @@ import { getStrapiMedia } from "../utils/medias";
 
 const ProductsList = ({ products }) => {
   return (
-    <div className="m-3 lg:my-2 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
       {products.map((_product) => (
         <div
           key={_product.id}
@@ -11,7 +11,7 @@ const ProductsList = ({ products }) => {
         >
           <div className="rounded-t-lg px-2">
             <img
-              className="crop mx-auto mt-2"
+              className="crop mx-auto mt-2 rounded-sm"
               src={getStrapiMedia(_product.image.formats.small.url)}
               alt={_product.title}
               min-width="325px"
