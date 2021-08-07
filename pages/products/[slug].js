@@ -27,7 +27,7 @@ const ProductPage = ({ product }) => {
       <div className="grid grid-cols-12">
         <div className="col-span-1">
           <button
-            className="bg-blue-600 min-w-0 font-black text-2xl text-white px-2 focus:bg-white focus:text-blue-600 rounded-sm"
+            className="min-w-0 font-black text-2xl text-white px-2 focus:bg-white focus:text-gray-800 rounded-sm"
             type="button"
             onClick={() => router.back()}
           >
@@ -76,8 +76,8 @@ const ProductPage = ({ product }) => {
                 </div>
                 <div className="flex-auto">
                   <button
-                    className="snipcart-add-item w-full mt-4 bg-white border-2 hover:bg-gray-800 focus:bg-gray-800 text-gray-800 
-                    hover:text-white focus:text-white font-semibold py-2 px-6 rounded shadow"
+                    className="snipcart-add-item w-full mt-4 text-white border-2 hover:bg-white focus:bg-white 
+                    hover:text-gray-800 focus:text-gray-800 font-semibold py-2 px-6 rounded shadow"
                     data-item-id={product.id}
                     data-item-price={product.price}
                     data-item-url={router.asPath}
