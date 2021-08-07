@@ -24,10 +24,21 @@ const ProductPage = ({ product }) => {
       <Head>
         <title>{product.title} gourmet food</title>
       </Head>
-      <div className="grid grid-cols-1">
-        <h1 className="text-center md:text-left md:ml-1 text-2xl font-sans font-semibold block text-white">
-          {product.title}
-        </h1>
+      <div className="grid grid-cols-12">
+        <div className="col-span-1">
+          <button
+            className="bg-blue-600 min-w-0 font-black text-2xl text-white px-2 focus:bg-white focus:text-blue-600 rounded-sm"
+            type="button"
+            onClick={() => router.back()}
+          >
+            &#60;
+          </button>
+        </div>
+        <div className="col-span-10">
+          <h1 className="text-center md:text-left md:ml-1 text-2xl font-sans font-semibold block text-white">
+            {product.title}
+          </h1>
+        </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div>
