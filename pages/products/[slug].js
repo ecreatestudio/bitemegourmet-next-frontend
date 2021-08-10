@@ -27,11 +27,18 @@ const ProductPage = ({ product }) => {
       <div className="grid grid-cols-12">
         <div className="col-span-1">
           <button
-            className="min-w-0 font-black text-2xl text-white px-2 focus:bg-white focus:text-gray-800 rounded-sm"
+            className="text-white focus:text-gray-800 focus:bg-white rounded-sm"
             type="button"
             onClick={() => router.back()}
           >
-            &#60;
+            <svg
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-8 w-8" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
           </button>
         </div>
         <div className="col-span-10">
