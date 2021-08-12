@@ -27,7 +27,7 @@ const ProductPage = ({ product }) => {
       <div className="grid grid-cols-12">
         <div className="col-span-1">
           <button
-            className="text-white rounded-sm"
+            className="text-white rounded-sm focus:text-gray-800 focus:bg-white"
             type="button"
             onClick={() => router.back()}
           >
