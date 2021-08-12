@@ -27,7 +27,7 @@ const ProductPage = ({ product }) => {
       <div className="grid grid-cols-12">
         <div className="col-span-1">
           <button
-            className="text-white focus:text-gray-800 focus:bg-white rounded-sm"
+            className="text-white rounded-sm"
             type="button"
             onClick={() => router.back()}
           >
@@ -37,7 +37,7 @@ const ProductPage = ({ product }) => {
               fill="none" 
               viewBox="0 0 24 24" 
               stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
         </div>
