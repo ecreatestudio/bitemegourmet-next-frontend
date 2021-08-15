@@ -15,7 +15,7 @@ const ProductPage = ({ product }) => {
       router.back();
       setTimeout(function () {
         router.reload();
-      }, 1000);
+      }, 100);
     } else {
       return null;
     }
