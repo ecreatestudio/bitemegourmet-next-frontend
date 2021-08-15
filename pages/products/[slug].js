@@ -12,7 +12,10 @@ const ProductPage = ({ product }) => {
 
   useEffect(() => {
     if (goBack === true) {
-      router.back().then(router.reload())
+      router.back();
+      setTimeout(function () {
+        router.reload();
+      }, 1000);
     } else {
       return null;
     }
@@ -21,7 +24,7 @@ const ProductPage = ({ product }) => {
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
-
+  
   const onQtyChange = (event) => {
     if (parseInt(event.target.value) < 1) {
       setQtyValue(1);
