@@ -10,9 +10,22 @@ const ProductPage = ({ product }) => {
   const [qtyValue, setQtyValue] = useState(1);
   const [goBack, setGoBack] = useState(false);
 
+  useEffect(() => {
+    if (goBack === true) {
+      router.back();
+      setTimeout(function () {
+        router.reload();
+        console.log("Can you see me now!");
+      }, 200);
+    } else {
+      return null;
+    }
+  }, [goBack]);
+
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
+  
   const onQtyChange = (event) => {
     if (parseInt(event.target.value) < 1) {
       setQtyValue(1);
@@ -20,17 +33,6 @@ const ProductPage = ({ product }) => {
       setQtyValue(event.target.value);
     }
   };
-
-  useEffect(() => {
-    if (goBack == true) {
-      router.back();
-      setTimeout(function () {
-        router.reload()
-        console.log('Can you see me now!');
-      }, 200);
-    }
-    
-  }, [goBack]);
 
   return (
     <div className="lg:h-full bg-gray-800 p-3 lg:rounded-lg lg:mb-2">
@@ -45,12 +47,18 @@ const ProductPage = ({ product }) => {
             onClick={() => setGoBack(true)}
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-8 w-8" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
         </div>
