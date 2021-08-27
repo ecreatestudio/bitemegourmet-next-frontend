@@ -2,24 +2,12 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { getProducts, getProduct } from "../../utils/api";
 import { getStrapiMedia } from "../../utils/medias";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
   const [qtyValue, setQtyValue] = useState(1);
-  const [goBack, setGoBack] = useState(false);
-
-  useEffect(() => {
-    if (goBack === true) {
-      router.back();
-      setTimeout(function () {
-        router.reload();
-      }, 100);
-    } else {
-      return null;
-    }
-  }, [goBack]);
 
   if (router.isFallback) {
     return <div>Loading category...</div>;
@@ -43,7 +31,7 @@ const ProductPage = ({ product }) => {
           <button
             className="text-white rounded-sm focus:text-gray-800 focus:bg-white"
             type="button"
-            onClick={() => setGoBack(true)}
+            onClick={() => router.back()}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

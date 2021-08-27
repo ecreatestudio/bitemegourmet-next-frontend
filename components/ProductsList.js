@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getStrapiMedia } from "../utils/medias";
 
 const ProductsList = ({ products }) => {
@@ -24,8 +23,7 @@ const ProductsList = ({ products }) => {
             <div className="mt-1 text-sm text-gray-200 truncate">
               {_product.description}
             </div>
-            <Link href={`/products/${_product.slug}`}>
-              <a>
+              <a href={`/products/${_product.slug}`}>
                 <button
                   className="text-white border-2 border-white hover:bg-white focus:bg-white hover:text-gray-800 focus:text-gray-800
                     font-bold mt-3 px-4 py-1 rounded-md"
@@ -34,7 +32,6 @@ const ProductsList = ({ products }) => {
                   View details
                 </button>
               </a>
-            </Link>
           </div>
         </div>
       ))}
