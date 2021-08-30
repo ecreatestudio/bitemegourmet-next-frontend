@@ -15,10 +15,34 @@ const CategoryPage = ({ category }) => {
         <title>{category.name} gourmet food</title>
       </Head>
       <div className="mx-2 lg:mx-0">
-        <div className="my-2 lg:mt-0 border rounded-lg bg-gray-900">
-          <h1 className="text-center md:text-left md:ml-5 my-1 text-2xl font-sans font-semibold text-gray-100">
-            {category.name}
-          </h1>
+        <div className="grid grid-cols-12 pl-2 pb-1 pt-2 my-2 lg:mt-0 border rounded-lg bg-gray-900">
+          <div className="col-span-1">
+            <button
+              className="text-white rounded-sm focus:text-gray-800 focus:bg-white mt-1"
+              type="button"
+              onClick={() => router.back()}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+          </div>
+          <div className="col-span-10">
+            <h1 className="text-center md:text-left md:ml-5 my-1 text-2xl font-sans font-semibold text-gray-100">
+              {category.name}
+            </h1>
+          </div>
         </div>
         <ProductsList products={category.products} />
       </div>
