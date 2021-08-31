@@ -66,7 +66,7 @@ const Navbar = ({ categories = [] }) => {
               className="logo w-24 sm:w-32"
             />
           </a>
-        <button className="snipcart-checkout flex flex-col items-center focus:outline-none focus:bg-gray-700">
+        <button className="snipcart-checkout flex flex-col items-center focus:outline-none focus:bg-gray-700 min-w-1/4">
           <img src="/basket3.svg" alt="Cart" height="20" width="20" />
           <span className="snipcart-total-price font-semibold text-sm text-blue-400 hover:underline"></span>
         </button>
