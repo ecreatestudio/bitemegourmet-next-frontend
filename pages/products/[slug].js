@@ -61,6 +61,8 @@ const ProductPage = ({ product }) => {
             src={getStrapiMedia(product.image.formats.small.url)}
             className="m-auto mt-2 rounded-md"
             alt={product.title}
+            width="458"
+            height="458"
           />
         </div>
         <div className="w-full flex flex-col justify-between">
