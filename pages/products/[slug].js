@@ -12,7 +12,7 @@ const ProductPage = ({ product }) => {
   if (router.isFallback) {
     return <div>Loading category...</div>;
   }
-  
+
   const onQtyChange = (event) => {
     if (parseInt(event.target.value) < 1) {
       setQtyValue(1);

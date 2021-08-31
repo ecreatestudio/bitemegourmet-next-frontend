@@ -59,13 +59,13 @@ const Navbar = ({ categories = [] }) => {
             </svg>
           </button>
         )}
-          <a href="/">
-            <img
-              src="/bite-me-gourmet-logo-bright.png"
-              alt="home"
-              className="logo w-24 sm:w-32"
-            />
-          </a>
+        <a href="/">
+          <img
+            src="/bite-me-gourmet-logo-bright.png"
+            alt="home"
+            className="logo w-24 sm:w-32"
+          />
+        </a>
         <button className="snipcart-checkout flex flex-col items-center focus:outline-none focus:bg-gray-700 min-w-1/4">
           <img src="/basket3.svg" alt="Cart" height="20" width="20" />
           <span className="snipcart-total-price font-semibold text-sm text-blue-400 hover:underline"></span>
@@ -78,14 +78,14 @@ const Navbar = ({ categories = [] }) => {
           }
         >
           {categories.map((_category) => (
-              <a
-                href={`/categories/${_category.slug}`}
-                key={_category.id}
-                className="border-b border-t border-transparent hover:bg-gray-800 focus:border-gray-500 font-semibold py-2 px-4 mx-1"
-                onClick={toggleMenu}
-              >
-                {_category.name}
-              </a>
+            <a
+              href={`/categories/${_category.slug}`}
+              key={_category.id}
+              className="border-b border-t border-transparent hover:bg-gray-800 focus:border-gray-500 font-semibold py-2 px-4 mx-1"
+              onClick={toggleMenu}
+            >
+              {_category.name}
+            </a>
           ))}
         </div>
       </div>
