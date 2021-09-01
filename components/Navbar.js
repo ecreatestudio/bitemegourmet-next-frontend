@@ -20,6 +20,8 @@ const Navbar = ({ categories = [] }) => {
           <button
             className="text-gray-400 hover:text-white focus:outline-none focus:text-white xl:hidden"
             onClick={toggleMenu}
+            aria-haspopup="true"
+            aria-expanded="true"
           >
             <svg
               className="block h-6 w-6"
@@ -41,6 +43,7 @@ const Navbar = ({ categories = [] }) => {
           <button
             className="text-gray-400 hover:text-white focus:outline-none focus:text-white xl:hidden"
             onClick={toggleMenu}
+            aria-haspopup="true"
           >
             <svg
               className="block h-6 w-6"
@@ -62,7 +65,7 @@ const Navbar = ({ categories = [] }) => {
         <a href="/">
           <img
             src="/bite-me-gourmet-logo-bright.png"
-            alt="home"
+            alt="Bite Me Gourmet Logo"
             className="logo w-24 sm:w-32"
           />
         </a>
