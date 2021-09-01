@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel="preconnect" href="https://cdn.snipcart.com" />
         <link
           rel="stylesheet"
-          href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css"
+          href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css"
         />
       </Head>
       <Component {...pageProps} />
