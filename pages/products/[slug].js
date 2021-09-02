@@ -31,6 +31,7 @@ const ProductPage = ({ product }) => {
           <button
             className="text-white rounded-sm focus:text-gray-800 focus:bg-white"
             type="button"
+            aria-label="Back"
             onClick={() => router.back()}
           >
             <svg
@@ -39,6 +40,7 @@ const ProductPage = ({ product }) => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -70,7 +72,10 @@ const ProductPage = ({ product }) => {
             <h4 className="mt-1 font-semibold text-lg leading-tight truncate text-white">
               Bite Me {product.title}
             </h4>
-            <div className="mt-1 font-semibold text-lg text-white">
+            <div
+              className="mt-1 font-semibold text-lg text-white"
+              aria-label="Price"
+            >
               ${product.price}{" "}
               <span className="font-light">{product.serving}</span>
             </div>
@@ -88,6 +93,7 @@ const ProductPage = ({ product }) => {
                       inputMode="numeric"
                       className="text-gray-800 text-center pt-3 pb-2 rounded-sm"
                       style={{ maxWidth: 5 + "em" }}
+                      aria-label="Quantity"
                     ></input>
                   </div>
                 </div>
