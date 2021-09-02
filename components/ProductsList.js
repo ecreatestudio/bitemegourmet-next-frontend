@@ -30,7 +30,7 @@ const ProductsList = ({ products }) => {
                     font-bold mt-3 px-4 py-1 rounded-md"
                 type="button"
               >
-                View details
+                View dish
               </button>
             </a>
           </div>
