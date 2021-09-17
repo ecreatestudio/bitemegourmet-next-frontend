@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bitemegourmet.com.au
+
+# Sitemaps
+Sitemap: https://bitemegourmet.com.au/sitemap.xml
