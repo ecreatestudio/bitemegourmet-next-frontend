@@ -7,9 +7,7 @@ const Banner = ({ enabled }) => {
             OPENING SOON! NOT TAKING ORDERS YET.
           </h4>
         </div>
-      ) : (
-        null
-      )}
+      ) : null}
     </div>
   );
 };
