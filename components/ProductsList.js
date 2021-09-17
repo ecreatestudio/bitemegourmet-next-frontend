@@ -9,13 +9,15 @@ const ProductsList = ({ products }) => {
           className="border rounded-lg bg-gray-100 hover:shadow-lg shadow-md bg-gray-800"
         >
           <div className="rounded-t-lg px-2">
-            <img
-              className="crop mx-auto mt-2 rounded-sm"
-              src={getStrapiMedia(_product.image.formats.small.url)}
-              alt={_product.title}
-              width="380"
-              height="380"
-            />
+            <a href={`/products/${_product.slug}`}>
+              <img
+                className="crop mx-auto mt-2 rounded-sm"
+                src={getStrapiMedia(_product.image.formats.small.url)}
+                alt={_product.title}
+                width="380"
+                height="380"
+              />
+            </a>
           </div>
           <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
             <h4 className="mt-1 font-semibold text-base leading-tight truncate text-white">
