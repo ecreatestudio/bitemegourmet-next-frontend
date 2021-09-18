@@ -1,7 +1,7 @@
 # *
 User-agent: *
-Disallow: */cart
-Disallow: */checkout
+Disallow: /cart
+Disallow: /checkout
 
 # Host
 Host: https://bitemegourmet.com.au

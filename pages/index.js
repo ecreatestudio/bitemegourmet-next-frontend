@@ -7,7 +7,10 @@ const HomePage = ({ products }) => {
     <div>
       <Head>
         <title>Bite Me Gourmet Online Ordering</title>
-        <meta name="google-site-verification" content="CLGaWkiSWw9UPdyfs7FyShAiAfwzNn_4f6RZz63gjl8" />
+        <meta
+          name="google-site-verification"
+          content="CLGaWkiSWw9UPdyfs7FyShAiAfwzNn_4f6RZz63gjl8"
+        />
       </Head>
       <div className="mx-2 lg:mx-0">
         <div className="py-1 my-2 lg:mt-0 border rounded-lg bg-gray-900">
