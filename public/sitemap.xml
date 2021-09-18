@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://bitemegourmet.com.au</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/categories/jellies</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/categories/snacks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/categories/cakes</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/categories/all-food</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/products/salad-garnished-with-greens</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/products/vegetable-soup-bowl</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/products/chocolate-pukis</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
-<url><loc>https://bitemegourmet.com.au/products/fried-chicken-wings</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T03:05:42.732Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.011Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/products/salad-garnished-with-greens</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.011Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/products/vegetable-soup-bowl</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.011Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/products/chocolate-pukis</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.011Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/products/fried-chicken-wings</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.012Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/categories/jellies</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.012Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/categories/snacks</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.012Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/categories/cakes</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.012Z</lastmod></url>
+<url><loc>https://bitemegourmet.com.au/categories/all-food</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-09-18T07:21:27.012Z</lastmod></url>
 </urlset>
