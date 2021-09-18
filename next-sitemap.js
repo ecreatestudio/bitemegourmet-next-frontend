@@ -5,7 +5,7 @@ module.exports = {
     policies: [
       {
         userAgent: "*",
-        disallow: ["*/cart", "*/checkout"],
+        disallow: ["/cart", "/checkout"],
       },
     ],
   },
